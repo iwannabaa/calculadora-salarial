@@ -18,11 +18,31 @@ body {
 
 .form-container {
   margin-top: 40px;
-  margin-bottom: 80px;
+  margin-bottom: 40px;
+
+  .input-container {
+    padding-right: 5px;
+
+    input {
+      text-align: right;
+      height: 50px;
+      line-height: 32px;
+      font-size: 32px;
+    }
+  }
+
+  .action-container {
+    padding-left: 0;
+
+    .action-submit {
+      text-transform: uppercase;
+      height: 50px;
+    }
+  }
 }
 
 .total-container {
-  margin-top: 40px;
+  margin-top: 20px;
 }
 
 .footer {

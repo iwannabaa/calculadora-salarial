@@ -3,17 +3,28 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 @import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
 // endbower
 //Google Font
-@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700);
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,700,300|Roboto+Condensed:400,700,300);
 
 body {
   font-family: 'Roboto Condensed';
+  background-color: #dee5e8;
 }
 .page-title {
-  color: #40545C;
+  color: #0d47a1;
   margin-top: 40px;
   text-align: center;
-  font-weight: 400;
-  text-transform: uppercase;
+  font-family: 'Roboto';
+  font-weight: 700;
+  //text-transform: uppercase;
+}
+.page-subtitle {
+  color: #42a5f5;
+  font-size: 20px;
+  text-align: center;
+
+    strong {
+      font-weight: 400;
+    }
 }
 
 .form-container {
@@ -21,7 +32,10 @@ body {
   margin-bottom: 40px;
 
   .input-container {
-    padding-right: 5px;
+    
+    @media  (min-width: $screen-sm-min) {
+      padding-right: 5px; 
+    }
 
     input {
       text-align: right;
@@ -32,11 +46,20 @@ body {
   }
 
   .action-container {
-    padding-left: 0;
+
+    @media  (min-width: $screen-sm-min) {
+      padding-left: 0; 
+    }
 
     .action-submit {
+      background-color: #42a5f5;
       text-transform: uppercase;
       height: 50px;
+      border: none;
+
+      &:hover {
+        background-color: #2196f3;
+      }
     }
   }
 }

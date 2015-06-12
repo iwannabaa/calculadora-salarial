@@ -4,6 +4,9 @@
   <div class="col-xs-8 col-xs-offset-2 col-md-4 col-md-offset-4 form-container">
     <form ng-submit="calculate()">
       <div class="row">
+        <div class="col-xs-12">
+          <label>Ingresa tu sueldo bruto</label>
+        </div>
         <div class="col-sm-7 input-container">
           <div class="input-group">
             <div class="input-group-addon">$</div>
@@ -17,22 +20,22 @@
     </form>
   </div>
 </div>
-<div class="row">
+<div class="row tax-container">
 <div class="col-xs-4 text-center">
   <div class="card">
-    <h3>AFP</h3>
+    <h3 class="card__title">AFP</h3>
     <h4>{{afpAmount | currency}}</h4>
   </div>
 </div>
 <div class="col-xs-4 text-center">
   <div class="card">
-    <h3>ISSS</h3>
+    <h3 class="card__title">ISSS</h3>
     <h4>{{isssTaxAmount | currency}}</h4>
   </div>
 </div>
 <div class="col-xs-4 text-center">
   <div class="card">
-    <h3>I.S.R.</h3>
+    <h3 class="card__title">I.S.R.</h3>
     <h4>{{utilityTaxAmount | currency}}</h4>
   </div>
 </div>

@@ -7,15 +7,20 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 
 body {
   font-family: 'Roboto Condensed';
-  background-color: #dee5e8;
+  background-color: #F7F9FA;
+  color: #637283;
 }
 .page-title {
   color: #0d47a1;
-  margin-top: 40px;
+  margin-top: 20px;
   text-align: center;
   font-family: 'Roboto';
   font-weight: 700;
   //text-transform: uppercase;
+  
+  @media  (min-width: $screen-sm-min) {
+    margin-top: 40px;
+  }
 }
 .page-subtitle {
   color: #42a5f5;
@@ -31,6 +36,13 @@ body {
   margin-top: 40px;
   margin-bottom: 40px;
 
+  label {
+    text-transform: uppercase;
+    color: #AFBACA;
+    margin-bottom: 10px;
+    font-weight: 400;
+  }
+
   .input-container {
     
     @media  (min-width: $screen-sm-min) {
@@ -38,19 +50,35 @@ body {
     }
 
     .input-group-addon {
-      font-size: 26px;
+      font-size: 32px;
+      border: none;
+      background: none;
+      border-radius: 0;
+      border-bottom: 1px solid #c5c5c5;
+      padding-left: 0;
+      color: inherit;
     }
 
     input {
+      /*text-align: right;
+      height: 50px;
+      line-height: 1;
+      font-size: 36px;*/
+      border: none;
       text-align: right;
       height: 50px;
       line-height: 1;
       font-size: 36px;
+      box-shadow: none;
+      background: none;
+      border-bottom: 1px solid #c5c5c5;
+      border-radius: 0;
+      color: inherit;
     }
   }
 
   .action-container {
-    margin-top: 5px;
+    margin-top: 10px;
 
     @media  (min-width: $screen-sm-min) {
       padding-left: 0; 
@@ -70,11 +98,26 @@ body {
   }
 }
 
-.card {
-  background-color: #fff;
-  border-radius: 5px;
-  box-shadow: 0 1px 2px #A5A5A5;
-  padding: 5px;
+.tax-container {
+  
+  .card {
+    background-color: #fff;
+    box-shadow: 0 1px 2px #A5A5A5;
+    padding: 5px;
+
+    &:nth-child(1) .card {
+      margin-right: -10px;
+    }
+
+    &:nth-child(2) .card {
+      margin-left: -5px;
+      margin-right: -5px;
+    }
+
+    &:nth-child(3) .card {
+      margin-left: -10px;
+    }
+  }
 }
 
 .total-container {

@@ -5,7 +5,10 @@
     <form ng-submit="calculate()">
       <div class="row">
         <div class="col-sm-7 input-container">
-          <input type="number" class="form-control" ng-model="salary">
+          <div class="input-group">
+            <div class="input-group-addon">$</div>
+            <input type="number" step="any" placeholder="0.00" class="form-control" ng-model="salary">
+          </div>
         </div>
         <div class="col-sm-5 action-container">
           <input type="submit" class="form-control btn btn-primary action-submit" value="Calcular">
@@ -16,16 +19,22 @@
 </div>
 <div class="row">
 <div class="col-xs-4 text-center">
-  <h3>AFP</h3>
-  <h4>{{afpAmount | currency}}</h4>
+  <div class="card">
+    <h3>AFP</h3>
+    <h4>{{afpAmount | currency}}</h4>
+  </div>
 </div>
 <div class="col-xs-4 text-center">
-  <h3>ISSS</h3>
-  <h4>{{isssTaxAmount | currency}}</h4>
+  <div class="card">
+    <h3>ISSS</h3>
+    <h4>{{isssTaxAmount | currency}}</h4>
+  </div>
 </div>
 <div class="col-xs-4 text-center">
-  <h3>Renta</h3>
-  <h4>{{utilityTaxAmount | currency}}</h4>
+  <div class="card">
+    <h3>I.S.R.</h3>
+    <h4>{{utilityTaxAmount | currency}}</h4>
+  </div>
 </div>
   <div class="col-xs-12 text-center total-container">
     <h1>Sueldo Neto</h1>

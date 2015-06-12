@@ -2,10 +2,10 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 $md-css-prefix: mdi;
 // bower:scss
 @import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
-@import "mdi/scss/_variables.scss";
 @import "mdi/scss/_core.scss";
 @import "mdi/scss/_icons.scss";
 @import "mdi/scss/_path.scss";
+@import "mdi/scss/_variables.scss";
 @import "mdi/scss/materialdesignicons.scss";
 // endbower
 //Google Font
@@ -19,7 +19,7 @@ body {
 
 .page-wrapper {
   background-color: #F7F9FA;
-  border-top: 5px solid #42a5f5;
+  border-top: 5px solid #2196f3;
 }
 .page-title {
   color: #0d47a1;

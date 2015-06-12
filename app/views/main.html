@@ -1,5 +1,5 @@
 <h1 class="page-title">Calculadora Salarial</h1>
-<p class="page-subtitle"><strong>Calcula tu sueldo neto y los descuentos correspondientes de ley</strong></p>
+<p class="page-subtitle"><strong>Calcula tu sueldo neto y los descuentos de ley correspondientes.</strong></p>
 <div class="row">
   <div class="col-xs-8 col-xs-offset-2 col-md-4 col-md-offset-4 form-container">
     <form ng-submit="calculate()">
@@ -23,19 +23,19 @@
 <div class="row tax-container">
 <div class="col-xs-4 text-center card-container">
   <div class="card">
-    <h3 class="card__title">AFP</h3>
+    <h3 class="card__title"><i class="mdi mdi-cash-multiple"></i>AFP</h3>
     <h4 class="card__content">{{afpAmount | currency}}</h4>
   </div>
 </div>
 <div class="col-xs-4 text-center card-container">
   <div class="card">
-    <h3 class="card__title">ISSS</h3>
+    <h3 class="card__title"><i class="mdi mdi-pill"></i>ISSS</h3>
     <h4 class="card__content">{{isssTaxAmount | currency}}</h4>
   </div>
 </div>
 <div class="col-xs-4 text-center card-container">
   <div class="card">
-    <h3 class="card__title">I.S.R.</h3>
+    <h3 class="card__title"><i class="mdi mdi-bank"></i>I.S.R.</h3>
     <h4 class="card__content">{{utilityTaxAmount | currency}}</h4>
   </div>
 </div>

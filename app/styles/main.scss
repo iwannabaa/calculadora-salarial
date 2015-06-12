@@ -1,6 +1,12 @@
 $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
+$md-css-prefix: mdi;
 // bower:scss
 @import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+@import "mdi/scss/_variables.scss";
+@import "mdi/scss/_core.scss";
+@import "mdi/scss/_icons.scss";
+@import "mdi/scss/_path.scss";
+@import "mdi/scss/materialdesignicons.scss";
 // endbower
 //Google Font
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,700,300|Roboto+Condensed:400,700,300);
@@ -13,24 +19,33 @@ body {
 
 .page-wrapper {
   background-color: #F7F9FA;
+  border-top: 5px solid #42a5f5;
 }
 .page-title {
   color: #0d47a1;
   margin-top: 20px;
   text-align: center;
-  font-family: 'Roboto';
+  font-family: 'Roboto Condensed';
   font-weight: 700;
-  //text-transform: uppercase;
+  text-transform: uppercase;
+  font-size: 32px;
+  letter-spacing: -1px;
   
   @media  (min-width: $screen-sm-min) {
     margin-top: 40px;
+    font-size: 40px;
+    letter-spacing: 0;
   }
 }
 .page-subtitle {
   color: #42a5f5;
-  font-size: 20px;
+  font-size: 18px;
   text-align: center;
   line-height: 1.2;
+
+  @media  (min-width: $screen-sm-min) {
+    font-size: 22px;
+  }
 
     strong {
       font-weight: 400;
@@ -41,11 +56,15 @@ body {
   margin-top: 40px;
   margin-bottom: 40px;
 
+  @media  (min-width: $screen-sm-min) {
+    margin-bottom: 60px;
+    margin-top: 60px;
+  }
+
   label {
     text-transform: uppercase;
     color: #AFBACA;
     margin-bottom: 10px;
-    font-weight: 400;
   }
 
   .input-container {
@@ -115,12 +134,16 @@ body {
       margin-left: -5px;
       margin-right: -5px;
       margin-top: -5px;
-      padding-top: 5px;
+      padding-top: 10px;
       background-color: #0d47A1;
       color: #FFF;
-      padding-bottom: 5px;
+      padding-bottom: 10px;
       font-weight: 400;
       font-size: 16px;
+
+      .mdi {
+        margin-right: 10px;
+      }
     }
 
     .card__content {

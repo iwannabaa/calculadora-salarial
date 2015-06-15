@@ -111,12 +111,55 @@ body {
       height: 50px;
       border: none;
       font-weight: 700;
+      font-size: 16px;
 
       &:hover {
         background-color: #2196f3;
       }
     }
   }
+}
+
+.tabs-container {
+  margin-bottom: 20px;
+  margin-left: -15px;
+  margin-right: -15px;
+
+  .tabs {
+    list-style: none;
+    margin-bottom: 0;
+    padding-left: 0;
+    background-color: #1976D2;
+
+    &:after {
+      clear: both;
+      display: table;
+      content: " ";
+    }
+  }
+  
+  .tabs__tab-item {
+    text-transform: uppercase;
+    width: 50%;
+    float: left;
+    color: #FFF;
+    text-align: center;
+
+    &.tabs__tab--active {
+      border-bottom: 5px solid #2196F3;
+    }
+
+    a {
+      padding-top: 15px;
+      color: inherit;
+      padding-bottom: 10px;
+      width: 100%;
+      display: block;
+      text-decoration: none;
+      font-size: 16px;
+    }
+  }
+
 }
 
 .tax-container {

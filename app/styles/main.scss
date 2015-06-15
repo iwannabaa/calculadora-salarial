@@ -1,13 +1,9 @@
 $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
-$md-css-prefix: mdi;
+
 // bower:scss
 @import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
-@import "mdi/scss/_core.scss";
-@import "mdi/scss/_icons.scss";
-@import "mdi/scss/_path.scss";
-@import "mdi/scss/_variables.scss";
-@import "mdi/scss/materialdesignicons.scss";
 // endbower
+
 //Google Font
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,700,300|Roboto+Condensed:400,700,300);
 
